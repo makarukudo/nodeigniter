@@ -15,6 +15,11 @@ nodeigniter is easy to use:
 var ni = require('nodeigniter');
 ```
 
+Dependencies:
+
+- connect
+- ejs
+
 How to run the app? The app.js is located in app folder
 
 ``` js
@@ -29,6 +34,16 @@ Customize the autoload in app/config/autoload.js
 ``` js
 // currently available helpers
 this.helpers = ['security','array','url', 'string', 'html', 'form'];
+
+//or load the helper in the controller
+var ni = require('nodeigniter');
+
+//either string
+ni.load_helper('array');
+
+//or array
+ni.load_helper(['array', 'url']);
+
 ```
 
 Customize the autoload in app/config/routes.js
@@ -61,10 +76,9 @@ We instantiate the mongojs for mongodb
 // config variable setting
 var ni = require('nodeigniter');
 
-var db = ni.db('collectioname');
+var db = ni.db('dbname','collectioname');
 
 db.collectioname.save({test: 'test'});
-
 ```
 
 How to render the view? I use the ejs templating system. It allows helper functions to be accessed locally on the view
