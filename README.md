@@ -1,7 +1,13 @@
 # nodeigniter
 A fast and flexible [node.js](http://nodejs.org) framework built for node developers.
 
-Website [nodeigniter](http://nodeigniter.co)
+The website:  [nodeigniter](http://nodeigniter.co)
+
+Install it using NPM
+
+``` js
+npm install nodeigniter
+```
 
 Inspired by Codeigniter
 
