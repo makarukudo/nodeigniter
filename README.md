@@ -3,19 +3,20 @@ A fast and flexible [node.js](http://nodejs.org) framework built for node develo
 
 The website:  [nodeigniter](http://nodeigniter.co)
 
-Install it using NPM
-
-``` js
-npm install nodeigniter
-```
-
 Inspired by Codeigniter
 
 ``` js
 http://www.domain.com/[controller]/[function]/[param1]/[param2]/[etc]
 ```
 
-nodeigniter is easy to use:
+Can be installed using NPM
+
+``` js
+npm install nodeigniter
+```
+
+
+It's easy to instantiate
 
 ``` js
 var ni = require('nodeigniter');
@@ -25,6 +26,8 @@ Dependencies:
 
 - connect
 - ejs
+- mongodb
+- mongojs
 
 How to run the app? The app.js is located in app folder
 
@@ -133,7 +136,7 @@ var password = ni.fn.sha1(ni.input.req_vars.password);
 ```
 
 
-We instantiate the mongojs for mongodb
+How to use mongodb support?
 
 ``` js
 // config variable setting
