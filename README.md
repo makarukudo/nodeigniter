@@ -99,6 +99,23 @@ ni.partial('section/header.ejs').partial('subfolder/main.ejs').render();
 
 ```
 
+view exaample app/views/section/header.ejs
+
+``` js
+{{= doctype('html5') }}
+<html lang="en">
+    <head>
+        <title>Nodeigniter - Fast and flexible node framework</title>
+        {{= link_tag('css/bootstrap.min.css?timestamp='+Number(new Date())) }}
+        {{= link_tag('css/custom.css?timestamp='+Number(new Date())) }}
+        {{= script_tag('js/jquery-1.4.6.min.js?timestamp='+Number(new Date())) }}
+        {{= script_tag('js/jquery.tmpl.js?timestamp='+Number(new Date())) }}
+    </head>
+
+//use the curly braces
+{{= some_function or some vars }}
+```
+
 For more details [the nodeigniter framework](http://www.nodeigniter.co)
 
 Created by: Michael Brucal
