@@ -15,6 +15,15 @@ nodeigniter is easy to use:
 var ni = require('nodeigniter');
 ```
 
+How to run the app? The app.js is located in app folder
+
+``` js
+//if you're in the root directory
+
+> node app\app.js
+
+```
+
 Customize the autoload in app/config/autoload.js
 
 ``` js
@@ -37,6 +46,24 @@ We can set our config variables
 ``` js
 // config variable setting
 var ni = require('nodeigniter');
+
+//setter
+ni.config('some-name', 'value');
+
+//getter
+ni.config('some-name');
+
+```
+
+We instantiate the mongojs for mongodb
+
+``` js
+// config variable setting
+var ni = require('nodeigniter');
+
+var db = ni.db('collectioname');
+
+db.collectioname.save({test: 'test'});
 
 ```
 
