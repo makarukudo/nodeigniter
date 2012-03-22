@@ -1,0 +1,75 @@
+/*@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lobster|Open+Sans+Condensed:700,300);
+* {
+    font-family: 'Droid Sans', 'Helvetical Neue', 'Arial', 'Tahoma';
+}*/
+.sl_header {
+    background: #EEE;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.container-top {
+    margin-top: 80px
+}
+
+.sl_header_right {
+    padding-top: 14px;
+    float: right
+}
+
+.container-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #404040;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.container-box > .container-header {
+    border: 1px solid #fff;    
+    border-bottom: 1px solid #ccc;
+    padding: 8px 20px;
+    background: #f6f6f6;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.container-box > .container-body {
+    padding: 20px
+}
+
+.input-fluid-small {
+    width: 15%
+}
+
+.input-fluid-medium {
+    width: 50%
+}
+
+.input-fluid-large {
+    width: 98%
+}
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right
+}
+
+.icon-float-left {
+    float: left;
+    margin-right: 4px
+}
+
+.input-big {
+    padding: 6px;
+}
+
+.select-big {
+    padding: 6px;
+    height: 32px;
+}
