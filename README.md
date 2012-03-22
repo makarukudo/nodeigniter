@@ -56,7 +56,7 @@ this.route = [
 ];
 ```
 
-We can set our config variables
+How to set the config variables?
 
 ``` js
 // config variable setting
@@ -66,7 +66,26 @@ var ni = require('nodeigniter');
 ni.config('some-name', 'value');
 
 //getter
-ni.config('some-name');
+var val = ni.config('some-name');
+
+```
+
+How to access helpers in the controller?
+
+``` js
+// config variable setting
+var ni = require('nodeigniter');
+
+//from url helper
+ni.fn.site_url();
+
+
+//from html helper
+ni.fn.anchor();
+
+
+//to view availabe functions
+console.log(ni.fn);
 
 ```
 
