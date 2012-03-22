@@ -80,6 +80,9 @@ ni.partial('main.ejs').render();
 //you can also put the file into a sub folder
 ni.partial('subfolder/main.ejs').render();
 
+//or this
+ni.partial('section/header.ejs').partial('subfolder/main.ejs').render();
+
 ```
 
 For more details [the nodeigniter framework](http://www.nodeigniter.co)
