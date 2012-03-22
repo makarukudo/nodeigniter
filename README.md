@@ -89,6 +89,44 @@ console.log(ni.fn);
 
 ```
 
+Working on forms?
+
+``` js
+// config variable setting
+var ni = require('nodeigniter');
+
+//validation library
+ni.load_librray('validation');
+
+//set the rules - same with codeigniter
+ni.validation.set_rules('name', 'display', 'required|valid_email|max_length[30]');
+
+//to execute
+if (ni.validation.run()) {
+    some function
+} else {
+    some function
+}
+
+//writing form fields to the view and setting the values
+
+{{= 
+    form_open('') + 
+    form_input('name', set_value('name'), {class: 'someclass', maxlength: 30}) + 
+    form_submit('submit', 'Submit')
+}}
+
+
+//accessing the request variables
+
+var username = ni.input.req_vars.username;
+var password = ni.fn.sha1(ni.input.req_vars.password);
+
+//you can also use any functions
+
+```
+
+
 We instantiate the mongojs for mongodb
 
 ``` js
