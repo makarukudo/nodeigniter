@@ -10,8 +10,8 @@ ni._initialize(function(){
         connect.query(), 
         connect.cookieParser('sukilab_connect'),
         connect.session({secret: 'slabs',cookie: {maxAge: 36000}}),
-        ni.router
-//        ni.not_found
+        ni.router,
+        ni.not_found
     ).listen(80);
     console.log('Application Started on Port: '+80);
 });
