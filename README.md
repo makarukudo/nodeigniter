@@ -1,6 +1,13 @@
 # nodeigniter
 A fast and flexible [node.js](http://nodejs.org) framework built for node developers.
-[nodeigniter](http://nodeigniter.co)
+
+Website [nodeigniter](http://nodeigniter.co)
+
+Inspired by Codeigniter
+
+``` js
+http://www.domain.com/[controller]/[function]/[param1]/[param2]/[etc]
+```
 
 nodeigniter is easy to use:
 
@@ -49,4 +56,7 @@ ni.partial('subfolder/main.ejs').render();
 ```
 
 For more details [the nodeigniter framework](http://www.nodeigniter.co)
+
+Created by: Michael Brucal
+
 Email @ epson.code@gmail.com
