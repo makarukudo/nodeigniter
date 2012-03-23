@@ -34,7 +34,7 @@ How to run the app? The app.js is located in app folder
 ``` js
 //if you're in the root directory
 
-> node app\app.js
+> node app.js
 
 ```
 

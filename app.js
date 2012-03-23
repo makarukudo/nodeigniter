@@ -1,15 +1,14 @@
 var ni = require('nodeigniter'),
     connect = require('connect');
 
-ni.config('default_route', 'main');
-ni.config('root', __dirname);
+ni.config('root', __dirname + '/app');
 ni._initialize(function(){
     connect.createServer(
         connect.bodyParser(),
         connect.static('public'),
         connect.query(), 
-        connect.cookieParser('sukilab_connect'),
-        connect.session({secret: 'slabs',cookie: {maxAge: 36000}}),
+        connect.cookieParser('ni_cookie'),
+        connect.session({secret: 'kM43QtvEhmhH2KK9sJac',cookie: {maxAge: 36000}}),
         ni.router,
         ni.not_found
     ).listen(80);
